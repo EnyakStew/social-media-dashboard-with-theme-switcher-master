@@ -1,87 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<title>Frontend Mentor | [Challenge Name Here]</title>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
 
-  Dark Mode
+	<body>
+		<header>
+			<div class="title">
+				<h1 class="title-1 font-white">Social Media Dashboard</h1>
+				<h2 class="font-grey">Total Followers: 23,004</h2>
+			</div>
+			<div class="dark-mode">
+				<h2 class="font-grey">Dark Mode</h2>
+				<button class="dark-mode-btn"></button>
+			</div>
+		</header>
+		<div class="dashboard grid">
+			<div class="grid-item">
+				<div class="network">
+					<img src="./images/icon-facebook.svg" alt="" class="social-icon" />
+					<h3 class="pseudo font-grey">@nathanf</h3>
+				</div>
+				<div class="followers">
+					<h4 class="number-followers font-white">1987</h4>
+					<h5 class="unit font-grey">FOLLOWERS</h5>
+				</div>
+				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">12 Today</h6></div>
+			</div>
+			<div class="grid-item">
+				<div class="network">
+					<img src="./images/icon-twitter.svg" alt="" class="social-icon" />
+		        
+					<h3 class="pseudo font-grey">@nathanf</h3>
+				</div>
+				<div class="followers">
+					<h4 class="number-followers font-white">1044</h4>
+					<h5 class="unit font-grey">FOLLOWERS</h5>
+				</div>
+				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">99 Today</h6></div>
 
-  
+			</div>
+			<div class="grid-item">
+				<div class="network">
+					<img src="./images/icon-instagram.svg" alt="" class="social-icon" />
+					<h3 class="pseudo font-grey">@realnathanf</h3>
+				</div>
+				<div class="followers">
+					<h4 class="number-followers font-white">11k</h4>
+					<h5 class="unit font-grey">FOLLOWERS</h5>
+				</div>
+				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">1099 Today</h6 class="font-green"></div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+			</div>
+			<div class="grid-item">
+				<div class="network">
+					<img src="./images/icon-youtube.svg" alt="" class="social-icon" />
+					<h3 class="pseudo font-grey">Nathan F.</h3>
+				</div>
+				<div class="followers">
+					<h4 class="number-followers font-white">8239</h4>
+					<h5 class="unit font-grey">Subscribers</h5>
+				</div>
+				<div class="today"><img src="./images/icon-down.svg"></img><h6  class="font-red">144  Today</h6></div>
+			</div>
+		</div>
+		<h1 class="title-2 font-white">Overview - Today</h1>
+		<div class="overview grid">
+			<div class="grid-item">
+				       
+		       
+				<h2 class="font-grey">Page Views</h2>
+				<img src="./images/icon-facebook.svg" alt="" class="media-icon" />
+				<div class="number font-white">87</div>
+				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">3%</h6></div>
+			</div>
+			<div class="grid-item">
+				<h2 class="font-grey">Likes</h2>
+				<img src="./images/icon-facebook.svg" alt="" class="media-icon" />
+				<div class="number font-white">52</div>
+				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">2%</h6></div>
+			</div>
+			<div class="grid-item">
+				<h2 class="font-grey">Likes</h2>
+				<img src="./images/icon-instagram.svg" alt="" class="media-icon" />
+				<div class="number font-white">5462</div>
+				<div class="today"><img src="./images/icon-down.svg"></img><h6 class="font-red">2257%</h6></div>
+			</div>
+			<div class="grid-item">
+				<h2 class="font-grey">Profile Views</h2>
+				<img src="./images/icon-instagram.svg" alt="" class="media-icon" />
+				<div class="number font-white">52k</div>
+				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">1375%</h6></div>
+			</div>
+			<div class="grid-item">
+				<h2 class="font-grey">Retweets</h2>
+				    
+		     
+				<img src="./images/icon-twitter.svg" alt="" class="media-icon" />
+				<div class="number font-white">117</div>
+				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">303%</h6></div>
+			</div>
+			<div class="grid-item">
+				<h2 class="font-grey">Likes</h2>
+				<img src="./images/icon-twitter.svg" alt="" class="media-icon" />
+				<div class="number font-white">507</div>
+				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">553%</h6></div>
+			</div>
+			<div class="grid-item">
+				<h2 class="font-grey">Likes</h2>
+				<img src="./images/icon-youtube.svg" alt="" class="media-icon" />
+				<div class="number font-white">107</div>
+				<div class="today"><img src="./images/icon-down.svg"></img><h6 class="font-red">19%</h6></div>
+			</div>
+			<div class="grid-item">
+				<h2 class="font-grey">Total Views</h2>
+				<img src="./images/icon-youtube.svg" alt="" class="media-icon" />
+				<div class="number font-white">1407</div>
+				<div class="today"><img src="./images/icon-down.svg"></img><h6 class="font-red">12%</h6></div>
+			</div>
+		</div>
+		  
 
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
+		<script src="./app.js"></script>
+	</body>
 </html>
