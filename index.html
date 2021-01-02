@@ -28,18 +28,20 @@
 	</head>
 
 	<body>
-		<header>
+		<div class="wrapper flex">
+		<header class="flex">
 			<div class="title">
 				<h1 class="title-1 font-white">Social Media Dashboard</h1>
 				<h2 class="font-grey">Total Followers: 23,004</h2>
 			</div>
-			<div class="dark-mode">
+			<div class="dark-mode flex">
 				<h2 class="font-grey">Dark Mode</h2>
 				<button class="dark-mode-btn"></button>
 			</div>
 		</header>
 		<div class="dashboard grid">
-			<div class="grid-item">
+			<div class="grid-item flex">
+				<div class="color" id="blue"></div>
 				<div class="network">
 					<img src="./images/icon-facebook.svg" alt="" class="social-icon" />
 					<h3 class="pseudo font-grey">@nathanf</h3>
@@ -50,8 +52,11 @@
 				</div>
 				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">12 Today</h6></div>
 			</div>
-			<div class="grid-item">
+			<div class="grid-item flex">
+				<div class="color "id="blue"></div>
+
 				<div class="network">
+		
 					<img src="./images/icon-twitter.svg" alt="" class="social-icon" />
 		        
 					<h3 class="pseudo font-grey">@nathanf</h3>
@@ -63,7 +68,9 @@
 				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">99 Today</h6></div>
 
 			</div>
-			<div class="grid-item">
+			<div class="grid-item flex">
+				<div class="color" id="ig" ></div>
+
 				<div class="network">
 					<img src="./images/icon-instagram.svg" alt="" class="social-icon" />
 					<h3 class="pseudo font-grey">@realnathanf</h3>
@@ -73,9 +80,9 @@
 					<h5 class="unit font-grey">FOLLOWERS</h5>
 				</div>
 				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">1099 Today</h6 class="font-green"></div>
-
 			</div>
-			<div class="grid-item">
+			<div class="grid-item flex">
+				<div class="color" id="red"></div>
 				<div class="network">
 					<img src="./images/icon-youtube.svg" alt="" class="social-icon" />
 					<h3 class="pseudo font-grey">Nathan F.</h3>
@@ -89,57 +96,86 @@
 		</div>
 		<h1 class="title-2 font-white">Overview - Today</h1>
 		<div class="overview grid">
-			<div class="grid-item">
-				       
-		       
+
+			<div class="grid-item flex">
+				<div class="top-half">
 				<h2 class="font-grey">Page Views</h2>
 				<img src="./images/icon-facebook.svg" alt="" class="media-icon" />
+				</div>
+				<div class="bottom-half">
 				<div class="number font-white">87</div>
 				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">3%</h6></div>
+				</div>
 			</div>
-			<div class="grid-item">
+			<div class="grid-item flex">
+				<div class="top-half">
 				<h2 class="font-grey">Likes</h2>
 				<img src="./images/icon-facebook.svg" alt="" class="media-icon" />
+				</div>
+				<div class="bottom-half">
 				<div class="number font-white">52</div>
 				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">2%</h6></div>
+				</div>
 			</div>
-			<div class="grid-item">
+			<div class="grid-item flex">
+				<div class="top-half">
 				<h2 class="font-grey">Likes</h2>
 				<img src="./images/icon-instagram.svg" alt="" class="media-icon" />
+				</div>
+				<div class="bottom-half">
 				<div class="number font-white">5462</div>
 				<div class="today"><img src="./images/icon-down.svg"></img><h6 class="font-red">2257%</h6></div>
+				</div>
 			</div>
-			<div class="grid-item">
+			<div class="grid-item flex">
+				<div class="top-half">
 				<h2 class="font-grey">Profile Views</h2>
 				<img src="./images/icon-instagram.svg" alt="" class="media-icon" />
+				</div>
+				<div class="bottom-half">
 				<div class="number font-white">52k</div>
 				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">1375%</h6></div>
+				</div>
 			</div>
-			<div class="grid-item">
+			<div class="grid-item flex">
+				<div class="top-half">
 				<h2 class="font-grey">Retweets</h2>
-				    
-		     
 				<img src="./images/icon-twitter.svg" alt="" class="media-icon" />
+				</div>
+				<div class="bottom-half">
 				<div class="number font-white">117</div>
 				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">303%</h6></div>
+				</div>
 			</div>
-			<div class="grid-item">
+			<div class="grid-item flex">
+				<div class="top-half">
 				<h2 class="font-grey">Likes</h2>
 				<img src="./images/icon-twitter.svg" alt="" class="media-icon" />
+				</div>
+				<div class="bottom-half">
 				<div class="number font-white">507</div>
 				<div class="today"><img src="./images/icon-up.svg"></img><h6 class="font-green">553%</h6></div>
+				</div>
 			</div>
-			<div class="grid-item">
+			<div class="grid-item flex">
+				<div class="top-half">
 				<h2 class="font-grey">Likes</h2>
 				<img src="./images/icon-youtube.svg" alt="" class="media-icon" />
+				</div>
+				<div class="bottom-half">
 				<div class="number font-white">107</div>
 				<div class="today"><img src="./images/icon-down.svg"></img><h6 class="font-red">19%</h6></div>
+				</div>
 			</div>
-			<div class="grid-item">
+			<div class="grid-item flex">
+				<div class="top-half">
 				<h2 class="font-grey">Total Views</h2>
 				<img src="./images/icon-youtube.svg" alt="" class="media-icon" />
+				</div>
+				<div class="bottom-half">
 				<div class="number font-white">1407</div>
 				<div class="today"><img src="./images/icon-down.svg"></img><h6 class="font-red">12%</h6></div>
+				</div>
 			</div>
 		</div>
 		  
@@ -149,6 +185,7 @@
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
 			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
 		</div>
 		<script src="./app.js"></script>
 	</body>

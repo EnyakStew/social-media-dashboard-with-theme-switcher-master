@@ -66,10 +66,121 @@ h6 {
 	font-size: 0.9rem;
 	font-weight: bold;
 }
+.number {
+	font-size: 2.3rem;
+	font-weight: bold;
+}
 
 /* ///////////////////////////////////////////// */
 
 /* BODY */
 body {
 	background-color: var(--bc);
+}
+.wrapper {
+	flex-direction: column;
+	height: 100vh;
+	margin: 2rem auto 4rem;
+	width: 80%;
+}
+/* Header */
+header {
+	justify-content: space-between;
+}
+.dark-mode {
+	flex-direction: row;
+	align-items: center;
+	justify-self: space-between;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	justify-content: space-between;
+	column-gap: 28px;
+}
+/* Grid items */
+.dashboard .grid-item {
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	/* width: 255px; */
+	height: 216px;
+	border-radius: 5px;
+	background-color: var(--primary);
+}
+.color {
+	height: 3px;
+	width: 100%;
+	display: fixed;
+	/* margin-top: -2rem; */
+	position: absolute;
+	top: 0;
+	border-radius: 5px 5px 0 0;
+}
+/* sticker colors */
+#blue {
+	background-color: var(--blue);
+}
+#ig {
+	background: linear-gradient(70deg, #df4896, #ee877e, #fdc366);
+}
+#red {
+	background-color: var(--red);
+}
+.network {
+	display: flex;
+	align-items: center;
+}
+.network .pseudo {
+	margin-left: 4px;
+}
+.followers {
+	align-items: center;
+}
+.number-followers {
+	text-align: center;
+}
+.unit {
+	margin-top: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+.today {
+	display: flex;
+	align-items: center;
+}
+.today img {
+	height: 4px;
+	margin-right: 5px;
+}
+
+/* OVERVIEW */
+
+.overview {
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	grid-gap: 28px;
+}
+.overview .grid-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 125px;
+	border-radius: 5px;
+	background-color: var(--primary);
+}
+.top-half,
+.bottom-half {
+	width: 80%;
+	height: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
 }
