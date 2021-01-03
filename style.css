@@ -76,6 +76,7 @@ h6 {
 /* BODY */
 body {
 	background-color: var(--bc);
+	transition: 0.5s;
 	/* overflow-y: hidden; */
 }
 .wrapper {
@@ -115,7 +116,7 @@ header {
 	cursor: pointer;
 }
 .dark-mode-btn input:checked {
-	background-color: #ffffff;
+	background: #979797;
 }
 .dark-mode input::before {
 	content: '';
@@ -126,10 +127,12 @@ header {
 	top: 8%;
 	left: 8%;
 	background-color: #333a55;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 	transition: 0.5s;
 }
 .dark-mode input:checked::before {
 	left: 50%;
+	background-color: #ffffff;
 }
 
 /* DASHBOARD */
@@ -259,4 +262,15 @@ header {
 	.overview {
 		grid-template-columns: repeat(3, 1fr);
 	}
+}
+
+/* light MODE */
+body.light {
+	background-color: #f7f9ff;
+}
+.grid-item.light {
+	background-color: #f1f3fa;
+}
+.font-white.light {
+	color: #1d1f29;
 }
