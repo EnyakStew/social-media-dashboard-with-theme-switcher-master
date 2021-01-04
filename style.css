@@ -301,6 +301,9 @@ body.light {
 .grid-item.light {
 	background-color: #f1f3fa;
 }
+.grid-item:hover.light {
+	background-color: #e1e4f0;
+}
 .font-white.light {
 	color: #1d1f29;
 }
