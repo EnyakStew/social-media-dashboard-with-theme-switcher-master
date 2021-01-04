@@ -264,7 +264,36 @@ header {
 		min-height: 80px;
 	}
 }
-
+/* Mobile */
+@media screen and (max-width: 480px) {
+	/* Fonts */
+	h1 {
+		font-size: 24px;
+	}
+	/*  */
+	header {
+		flex-direction: column;
+		justify-content: space-evenly;
+		min-height: 140px;
+		margin-bottom: 2rem;
+	}
+	.title {
+		width: 100%;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.title h1,
+	.title h2 {
+		/* text-align: center; */
+	}
+	.title h1 {
+		line-height: 36px;
+	}
+	.dark-mode {
+		justify-content: space-between;
+		width: 100%;
+	}
+}
 /* light MODE */
 body.light {
 	background-color: #f7f9ff;
